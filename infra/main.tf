@@ -30,6 +30,8 @@ resource "aws_instance" "web" {
   ami = "ami-0c02fb55956c7d316"
   instance_type = "t2.micro"
 
+  key_name = aws_key_pair.deployer.key_name
+
   security_groups = [aws_security_group.web_sg.name]
 
     user_data = <<-EOF
@@ -46,6 +48,11 @@ resource "aws_instance" "web" {
   tags = {
     Name = "web-server"
   }
+}
+
+resource "aws_key_pair" "deployer" {
+  key_name   = "aws-key"
+  public_key = file("../aws-key.pub")
 }
 
 output "public_ip" {
