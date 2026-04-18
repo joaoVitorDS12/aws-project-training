@@ -29,3 +29,9 @@ jobs:
           aws cloudfront create-invalidation \
             --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
             --paths "/*"
+
+      - name: Refresh Auto Scaling instances
+        run: |
+          aws autoscaling start-instance-refresh \
+            --auto-scaling-group-name web \
+            --preferences '{"MinHealthyPercentage": 50}'
