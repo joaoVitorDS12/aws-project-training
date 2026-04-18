@@ -33,5 +33,5 @@ jobs:
       - name: Refresh Auto Scaling instances
         run: |
           aws autoscaling start-instance-refresh \
-            --auto-scaling-group-name web \
+            --auto-scaling-group-name web-asg \
             --preferences '{"MinHealthyPercentage": 50}'
