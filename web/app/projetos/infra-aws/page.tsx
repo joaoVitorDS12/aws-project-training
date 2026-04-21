@@ -158,7 +158,7 @@ export default function InfraAwsPage() {
       {/* LINKS */}
       <section>
         <a
-          href="https://github.com/joaoVitorDS12/aws-project-training"
+          href="https://github.com/joaoVitorDS12/AWS-Infrastructure-With-Terraform"
           target="_blank"
           className="mt-6 text-sm border border-zinc-700 px-4 py-2 rounded hover:bg-zinc-800 transition"
         >
