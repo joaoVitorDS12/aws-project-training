@@ -2,7 +2,7 @@
 
 Infraestrutura provisionada na AWS utilizando Terraform, simulando um ambiente real de produção com foco em escalabilidade, confiabilidade e boas práticas de engenharia. O próprio portfólio que documenta este projeto está hospedado nesta infraestrutura.
 
-🌐 **[Ver portfólio ao vivo](https://d35xpuot06haku.cloudfront.net)**
+🌐 **[Ver portfólio ao vivo](https://d3ej0gliqfppo1.cloudfront.net/)**
 
 ---
 
